@@ -1,0 +1,19 @@
+/**
+ *
+ * @author Hugo
+ */
+public class TestArgumentosVariables {
+    public static void main(String[] args) {
+        variosParametros("Hugo", 1,22,88,9);
+    }
+    
+    private static void variosParametros(String nombre, int... numeros){
+        System.out.println("nombre :" + nombre);
+        imprimirNumeros(numeros);
+    }
+    private static void imprimirNumeros(int... numeros){
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("elementos :" + numeros[i]);
+        }
+    }
+}
